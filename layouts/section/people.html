@@ -1,0 +1,72 @@
+{{- define "main" -}}
+
+  {{- $member_groups :=  site.Data.members.member_groups -}}
+
+
+
+  {{ partial "page_header.html" . }}
+
+  <div class="universal-wrapper members-list-page">
+    <div class="row">
+      <div class="col-lg-12">
+
+        {{ with .Content }}
+          <div class="article-style">{{ . }}</div>
+        {{ end }}
+
+
+        <div class="row justify-content-center people-widget">
+
+          {{ range $g_index, $g_item := $member_groups }}
+            {{ $members := index site.Data.members.members $g_item.key }}
+
+            <div class="col-md-12">
+              <h2 class="mb-4 mt-5 pt-5 group-name">{{ $g_item.name | markdownify }}</h2> {{/* group name */}}
+            </div>
+
+            {{ range $m_index, $m_item := $members }}
+
+              <div class="col-12 col-sm-auto people-person">
+                {{ $src := $m_item.avatar | relURL }}
+                {{ $link := "" }}
+
+                <div class="avatar-title">
+
+                  {{ if $m_item.avatar }}
+                    {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+                    {{with $link}}<a href="{{.}}">{{end}}<img loading="lazy"
+                                                              class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
+                                                              src="{{ $src }}" alt="Avatar">{{if $link}}</a>{{end}}
+                  {{ else }}
+                    {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+                    {{with $link}}<a href="{{.}}">{{end}}
+                    <i
+                      class="fa fa-user user-icon-avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
+                      title="Avatar"></i>
+                    {{if $link}}</a>{{end}}
+                  {{ end }}
+
+                  <div class="portrait-title">
+                    <h2>{{with $link}}<a href="{{.}}">{{end}}{{ $m_item.name }}{{if $link}}</a>{{end}}</h2>
+                    {{/* if  $m_item.title }}<h3>{{ $m_item.title | markdownify | emojify }}</h3>{{ end */}}
+                    {{ if  $m_item.years }}
+                        <h3 >{{ $m_item.years | markdownify | emojify }}</h3>
+                    {{ end }}
+                  </div>
+
+                </div>
+              </div>
+
+
+            {{ end }}
+
+          {{ end }}
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+{{- end -}}

@@ -1,0 +1,32 @@
+{{ $item := . }}
+
+<div class="pub-list-item card-simple view-card"  style="margin-bottom: 1rem" >
+  <div class="article-metadata">
+    <div>
+      {{ $item.author_text | markdownify | safeHTML}}
+    </div>
+    <span class="pub-publication">{{ $item.publication_info | markdownify | safeHTML}}</span>
+  </div>
+  <div class="section-subheading article-title mb-1 mt-3">
+    <sapn class="pub-journal">[{{ $item.journal | markdownify | safeHTML}}] </sapn>
+    <sapn class="pub-title">{{ $item.title | markdownify | safeHTML}}</sapn><br>
+  </div>
+
+  {{ if $item.links}}
+    <p>
+      {{ range $item.links }}
+        {{- $url := .url -}}
+        {{- if eq .link_type "local" -}}
+          {{- $url = .url | relURL -}}
+        {{- end -}}
+        <a class="btn btn-outline-primary btn-page-header btn-sm" target="_blank" href="{{ $url }}">{{ .text }}</a>
+      {{ end }}
+    </p>
+  {{ end }}
+
+
+
+
+
+
+</div>

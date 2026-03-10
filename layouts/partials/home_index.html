@@ -1,0 +1,130 @@
+
+{{/*  lab 介绍  */}}
+{{ $heroBlock := .Params.heroBlock }}
+<section  id="section-hero" class="home-section wg-hero" >
+  <div class="container">
+    <div class="row">
+      <div class="col-12 hero-title" >{{ $heroBlock.content.title | markdownify }}</div>
+    </div>
+    <div class="row">
+      <div class="col-12 hero-desc-txt" >{{/* $heroBlock.content.text | markdownify */}}</div>
+    </div>
+  </div>
+</section>
+
+
+{{/*
+jQuery轮播效果（Carousell）
+注意 prev nextl 两个button的href id 和 setction id要一致
+https://blog.csdn.net/chenmo2001/article/details/117674446
+*/}}
+{{ $slider_hash_id := "hero_sliders" }}
+{{ $slider_args := dict "wcPage" $ "wcBlock" .Params.heroSlideBlock "wcIdentifier" $slider_hash_id }}
+<section  id="section-home-slide" class="home-section wg-home-slide">
+  <div class="container">
+    <div class="row">
+      <div class="col-12  hero-media carousel slide " data-ride="carousel"  id="{{ $slider_hash_id }}">
+        {{ partial "blocks/slider.html" $slider_args }}
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+{{/*
+  Recent works
+
+
+<section id="section-recent-works" class="home-section ">
+  <div class="container">
+    <div class="section-c-title" >Recent Works</div>
+    <div class="grid grid-cols-1 gap-x-12 gap-y-16  lg:grid-cols-3">
+      {{ range .Params.recentWorksBlock }}
+
+        {{- $image := resources.Get (path.Join "media" .img) -}}
+
+        <div class="">
+
+          <div class="card"  >
+            <a href="{{ .link }}"><img src="{{ $image.RelPermalink }}" alt="{{ .title }}"></a>
+            <div class="card-body">
+              <!-- <h5 class="card-title">title</h5> -->
+              <p class="card-text">{{ .desc }}</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+*/}}
+
+
+
+{{/*
+  Publications
+
+<section id="section-publications" class="home-section ">
+  <div class="container">
+    <div class="section-c-title" >Publications</div>
+    <div class="">
+      <div style="padding-bottom: 2rem;">Full list in <a href="https://scholar.google.com/citations?user=_-JylBkAAAAJ&hl=en">Google Scholar</a>. </div>
+      <ul class="">
+        {{ range  .Site.Data.publications }}
+          <li class="">
+            {{ partial "views/pub_item.html" . }}
+          </li>
+        {{ end }}
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+*/}}
+
+
+
+
+
+{{ $newsBlock := .Params.newsBlock }}
+{{ $pubsBlock := .Params.publicationsBlock }}
+{{ $news_args := dict "wcPage" $ "wcBlock" $newsBlock "wcIdentifier" "latest_news" }}
+{{ $pubs_args := dict "wcPage" $ "wcBlock" $pubsBlock "wcIdentifier" "latest_pubs" }}
+<section id="section-news" class="home-section wg-news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 text-center text-md-left">
+
+        <div class="row title-head">
+          <div class="col-12 col-md-8 common-block-title">{{ $newsBlock.content.title }}</div>
+          <div class="col-12 col-md-4 more-cell"><a class="more-link" href="{{"news" | relURL }}">More &gt; </a></div>
+        </div>
+
+          {{ partial "blocks/collection.html" $news_args }}
+      </div>
+
+      <div class="col-12 col-md-6  text-center text-md-left ">
+
+        <div class="row title-head">
+          <div class="col-12 col-md-8 common-block-title">Latest Publications</div>
+          <div class="col-12 col-md-4 more-cell"><a class="more-link" href="{{"publications" | relURL }}">More &gt; </a></div>
+        </div>
+
+        <div class="col-12">
+          {{$pubs := first 5 (sort  .Site.Data.publications "year" "desc")  }}
+          {{ range  $pubs }}
+              {{ partial "views/pub_item_card.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

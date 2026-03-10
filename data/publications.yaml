@@ -1,0 +1,337 @@
+- journal: "Nature"
+  title: "Accelerated discovery of CO₂ electrocatalysts using active machine learning"
+  author_text: "**Miao Zhong**, Kevin Tran, Yimeng Min, Chuanhao Wang, Ziyun Wang, Cao-Thang Dinh, Phil De Luna, Zongqian Yu, Armin Sedighian Rasouli, Peter Brodersen, Song Sun, Oleksandr Voznyy, Chih-Shan Tan, Mikhail Askerka, Fanglin Che, Min Liu, Ali Seifitokaldani, Yuanjie Pang, Shen-Chuan Lo, Alexander Ip, Zachary Ulissi, Edward H. Sargent"
+  publication_info: "Nature 581, 178--183 (2020)"
+  year: 2020
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/1.Accelerated.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1038/s41586-020-2242-8"
+
+- journal: "Journal of the American Chemical Society"
+  title: "Surface Modification of CoOₓ Loaded BiVO₄ Photoanodes with Ultrathin p-Type NiO Layers for Improved Solar Water Oxidation"
+  author_text: "**Miao Zhong**, Takashi Hisatomi, Yongbo Kuang, Jiao Zhao, Min Liu, Akihide Iwase, Qingxin Jia, Hiroshi Nishiyama, Tsutomu Minegishi, Mamiko Nakabayashi, Naoya Shibata, Ryo Niishiro, Chisato Katayama, Hidetaka Shibano, Masao Katayama, Akihiko Kudo, Taro Yamada, Kazunari Domen"
+  publication_info: "J. Am. Chem. Soc. 2015, 137, 5053−5060"
+  year: 2015
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/2.Surface.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1021/jacs.5b00256"
+
+- journal: "Nature Communications"
+  title: "Stable, active CO₂ reduction to formate via redox-modulated stabilization of active sites"
+  author_text: "Le Li, Adnan Ozden, Shuyi Guo, F. Pelayo García de Arquer, Chuanhao Wang, Mingzhe Zhang, Jin Zhang, Haoyang Jiang, Wei Wang, Hao Dong, David Sinton, Edward H. Sargent, **Miao Zhong**"
+  publication_info: "Nat. Commun. 12, 5223 (2021)"
+  year: 2021
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/3.Stable.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1038/s41467-021-25573-9"
+
+- journal: "Nature Communications"
+  title: "Accelerating electrochemical CO₂ reduction to multi-carbon products via asymmetric intermediate binding at confined nanointerfaces"
+  author_text: "Jin Zhang, Chenxi Guo, Susu Fang, Xiaotong Zhao, Le Li, Haoyang Jiang, Zhaoyang Liu, Ziqi Fan, Weigao Xu, Jianping Xiao, **Miao Zhong**"
+  publication_info: "Nat. Commun. 14, 1298 (2023)"
+  year: 2023
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/4.Accelerating.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1038/s41467-023-36926-x"
+
+- journal: "Angewandte Chemie"
+  title: "Highly Active GaN-Stabilized Ta₃N₅ Thin-Film Photoanode for Solar Water Oxidation"
+  author_text: "**Miao Zhong**, Takashi Hisatomi, Yutaka Sasaki, Sayaka Suzuki, Katsuya Teshima, Mamiko Nakabayashi, Naoya Shibata, Hiroshi Nishiyama, Masao Katayama, Taro Yamada, Kazunari Domen"
+  publication_info: "Angew. Chem. 2017, 129, 4817"
+  year: 2017
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/5.Highly.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1002/ange.201700117"
+
+- journal: "Nature Catalysis"
+  title: "Light-driven CO₂ methanation over Au-grafted Ce₀.₉₅Ru₀.₀₅O₂ solid-solution catalysts with activities approaching the thermodynamic limit"
+  author_text: "Haoyang Jiang, Linyu Wang, Hiroaki Kaneko, Rongtian Gu, Guangxu Su, Le Li, Jin Zhang, Hucheng Song, Feng Zhu, Akira Yamaguchi, Jun Xu, Fanxin Liu, Masahiro Miyauchi, Weiping Ding, **Miao Zhong**"
+  publication_info: "Nat. Catal. 6, 519--530 (2023)"
+  year: 2023
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/6.Light-driven.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1038/s41929-023-00970-z"
+
+- journal: "Angewandte Chemie"
+  title: "Achieving High Single-Pass Carbon Conversion Efficiencies in Durable CO₂ Electroreduction in Strong Acids via Electrode Structure Engineering"
+  author_text: "Le Li, Zhaoyang Liu, Xiaohan Yu, Prof. **Miao Zhong**"
+  publication_info: "Angew. Chem. 2023, 135, e202300226"
+  year: 2023
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/7.Achieving.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1002/ange.202300226"
+
+- journal: "Nature Communications"
+  title: "Coverage enhancement accelerates acidic CO₂ electrolysis at ampere-level current with high energy and carbon efficiencies"
+  author_text: "Xiaohan Yu, Yuting Xu, Le Li, Mingzhe Zhang, Wenhao Qin, Fanglin Che, **Miao Zhong**"
+  publication_info: "Nat. Commun. 15, 1711 (2024)"
+  year: 2024
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/8.Coverage.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1038/s41467-024-45988-4"
+
+- journal: "Energy & Environmental Science"
+  title: "A conductive ZnO--ZnGaON nanowire-array-on-a-film photoanode for stable and efficient sunlight water splitting"
+  author_text: "**Miao Zhong**, Yanhang Ma, Peter Oleynikov, Kazunari Domen, Jean-Jacques Delaunay"
+  publication_info: "Energy Environ. Sci.,2014,7,1693"
+  year: 2014
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/9.A.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1039/c3ee43806f"
+
+- journal: "Nanoscale"
+  title: "ZnO--ZnGa₂O₄ core--shell nanowire array for stable photoelectrochemical water splitting"
+  author_text: "**Miao Zhong**, Yanbo Li, Ichiro Yamada, Jean-Jacques Delaunay"
+  publication_info: "Nanoscale, 2012, 4, 1509--1514"
+  year: 2012
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/10.ZnO.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1039/c2nr11451h"
+
+- journal: "Journal of Materials Chemistry A"
+  title: "Bulky crystalline BiVO₄ thin films for efficient solar water splitting"
+  author_text: "**Miao Zhong**, Takashi Hisatomi, Tsutomu Minegishi, Hiroshi Nishiyama, Masao Katayama, Taro Yamada, Kazunari Domen"
+  publication_info: "J. Mater. Chem. A,2016,4,9858--9864"
+  year: 2016
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/11.Bulky.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1039/c6ta03072f"
+
+- journal: "Nanotechnology"
+  title: "ZnO dense nanowire array on a film structure in a single crystal domain texture for optical and photoelectrochemical applications"
+  author_text: "**Miao Zhong**, Yukio Sato, Mario Kurniawan, Aleksandra Apostoluk, Bruno Masenelli, Etsuo Maeda, Yuichi Ikuhara, Jean-Jacques Delaunay"
+  publication_info: "Nanotechnology 23 (2012) 495602"
+  year: 2012
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/12.ZnO.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1088/0957-4484/23/49/495602"
+
+- journal: "Nanotechnology"
+  title: "Self-assembly of versatile tubular-like In₂O₃ nanostructures"
+  author_text: "**Miao Zhong**, Maojun Zheng, Li Ma, Yanbo Li"
+  publication_info: "Nanotechnology 18 (2007) 465605"
+  year: 2007
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/13.Self-assembly.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1088/0957-4484/18/46/465605"
+
+- journal: "Journal of the American Chemical Society"
+  title: "Sustainable Electrosynthesis of N,N-Dimethylformamide via Relay Catalysis on Synergistic Active Sites"
+  author_text: "Weihang Li, Haoyang Jiang, Xiang Zhang, Bo Lei, Le Li, Haoshen Zhou, **Miao Zhong**"
+  publication_info: "J. Am. Chem. Soc. 2024, 146, 21968−21976"
+  year: 2024
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/14.Sustainable.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1021/jacs.4c07142"
+
+- journal: "Frontiers in Chemistry"
+  title: "Bimetallic Cu-Bi catalysts for efficient electroreduction of CO₂ to formate"
+  author_text: "Le Li, Xuan Jin, Xiaohan Yu, **Miao Zhong**"
+  publication_info: "Front. Chem. 10:983778."
+  year: 2022
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/15.Bimetallic.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.3389/fchem.2022.983778"
+
+- journal: "Nanoscale Advances"
+  title: "Synthesis of polyoxometalate-pillared Zn--Cr layered double hydroxides for photocatalytic CO₂ reduction and H₂O oxidation"
+  author_text: "Xiaotong Zhao, Haoyang Jiang, Yongcheng Xiao, **Miao Zhong**"
+  publication_info: "Nanoscale Adv., 2024, 6, 1241--1245"
+  year: 2024
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/16.Synthesis.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1039/d3na01024d"
+
+- journal: "ChemElectroChem"
+  title: "Redox-Stabilized Sn/SnO₂ Nanostructures for Efficient and Stable CO₂ Electroreduction to Formate"
+  author_text: "Haoyang Jiang, Ziqi Fan, Mingzhe Zhang, Shuyi Guo, Le Li, Xiaohan Yu, Zhaoyang Liu, Wei Wang, Hao Dong, **Miao Zhong**"
+  publication_info: "ChemElectroChem 2023, 10, e202201164"
+  year: 2023
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/17.Redox-Stabilized.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1002/celc.202201164"
+
+- journal: "Nano Letters"
+  title: "Accelerating Reverse Water Gas Shift Reaction through Synergistic CO₂ and H₂ Activation on Ru--Fe--(Vₒ-in-CeO₂) Ternary Catalytic Centers"
+  author_text: "Haoyang Jiang, Linyu Wang, Chuanhao Wang, Yi Xie, Caijuan Shi, Yongcheng Xiao, Yueren Liu, Weiping Ding, **Miao Zhong**"
+  publication_info: "Nano Lett. 2025, 25, 3579−3587"
+  year: 2025
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/18.Accelerating.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1021/acs.nanolett.4c06427"
+
+- journal: "Angewandte Chemie"
+  title: "Energy Efficiency Limit in CO-to-Ethylene Electroreduction and the Method to Advance Toward"
+  author_text: "Jin Zhang, Haoyang Jiang, Xiaotong Zhao, Zhaoyang Liu, Le Li, Weiping Ding, **Miao Zhong**"
+  publication_info: "Angew. Chem. Int. Ed. 2025, 64, e202502690"
+  year: 2025
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/19.Energy.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1002/anie.202502690"
+
+- journal: "Chemistry--A European Journal"
+  title: "Promoted Photothermal Catalytic CO Hydrogenation by Using TiC-Supported Co−Fe₅C₂ Catalysts"
+  author_text: "Dr. Haoyang Jiang, Feng Zhu, Renjie Zhou, Linyu Wang, Yongcheng Xiao, Prof. Dr. **Miao Zhong**"
+  publication_info: "Chem. Eur. J. 2023, 29, e202202891"
+  year: 2023
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/20.Promoted.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1002/chem.202202891"
+
+- journal: "Chinese Journal of Catalysis"
+  title: "Efficient nitrate electroreduction to ammonia via synergistic cascade catalysis at Cu/Fe₂O₃ hetero-interfaces"
+  author_text: "Xiang Zhang, Weihang Li, Jin Zhang, Haoshen Zhou, **Miao Zhong**"
+  publication_info: "Chinese Journal of Catalysis 68 (2025) 404--413"
+  year: 2025
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/21.Efficient.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1016/S1872-2067(24)60194-4"
+
+- journal: "Chemistry--An Asian Journal"
+  title: "Electrochemical CO₂ Reduction Using Membrane Electrode Assemblies: Progress, Challenges, and Opportunities"
+  author_text: "Yuhang Jiang, Le Li, Jin Zhang, Weihang Li, Xiaotong Zhao, Yi Xie, Mengyang Guo, **Miao Zhong**"
+  publication_info: "Chem Asian J. 2025, 20, e00685"
+  year: 2025
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/22.Electrochemical.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1002/asia.202500685"
+
+- journal: "Journal of Environmental Sciences"
+  title: "Boosting dimethyl carbonate synthesis from CO₂ and methanol through oxygen vacancy engineering on CeO₂ under thermodynamically favorable conditions"
+  author_text: "Yongcheng Xiao, Bo Lei, Haoyang Jiang, Yi Xie, Junjie Du, Weigao Xu, Dekun Ma, **Miao Zhong**"
+  publication_info: "Journal of environmental sciences 155 (2025) 613--621"
+  year: 2025
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/23.Boosting.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1016/j.jes.2024.05.048"
+
+- journal: "Discover Nano"
+  title: "Scalable synthesis of BiVO₄ thin films via anodic plating and thermal calcination"
+  author_text: "Haoyang Jiang, Yongcheng Xiao, **Miao Zhong**"
+  publication_info: "Discover Nano 18, 6 (2023)."
+  year: 2023
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/24.Scalable.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1186/s11671-023-03774-z"
+
+- journal: "Progress in Natural Science: Materials International"
+  title: "Promoted reverse water-gas shift activity on transition metals-incorporated iron-cerium oxide solid solution catalyst"
+  author_text: "Yi Xie, Wenhao Qin, Linyu Wang, Yueren Liu, Haoyang Jiang, **Miao Zhong**"
+  publication_info: "Progress in Natural Science: Materials International 34 (2024) 676--681"
+  year: 2024
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/25.Promoted.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1016/j.pnsc.2024.05.011"
+
+- journal: "Chinese Journal of Chemistry"
+  title: "Efficient Photothermal CO Hydrogenation into C₂+ Hydrocarbons on in situ Generated Fe⁰ in Fe₅C₂ Active Sites via Cu-Promoted Hydrogen Dissociation and Spillover"
+  author_text: "Renjie Zhou, Haoyang Jiang, Yongcheng Xiao, Yueren Liu, **Miao Zhong**"
+  publication_info: "Chin. J. Chem. 2025, 43, 791--797."
+  year: 2025
+  links:
+    - link_type: "local"
+      text: "PDF"
+      url: "uploads/pdf/26.Efficient.pdf"
+    - link_type: "external"
+      text: " DOI"
+      url: "https://doi.org/10.1002/cjoc.202400905"

@@ -1,0 +1,83 @@
+name: Build and Deploy
+# 监听 master 分支上的 push 事件
+on:
+  push:
+    branches:
+      - main
+
+
+env:
+  WC_HUGO_VERSION: '0.135.0'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    # 构建环境使用 ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # 官方action, 将代码拉取到虚拟机
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+
+      # 安装 hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.WC_HUGO_VERSION }}
+          extended: true
+
+      - uses: actions/cache@v4
+        with:
+          path: /tmp/hugo_cache_runner/
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
+      # GitHub Pages 配置
+#      - name: Setup Pages
+#        id: pages
+#        uses: actions/configure-pages@v5
+
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+        run: |
+          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
+          hugo --minify
+#          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+
+
+
+      #  生成 gh-pages 分支 的内容
+#      - name: Deploy Web
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          # token： setting -> Developer Settings -> classic token
+#          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+#          # build to other repository
+#          EXTERNAL_REPOSITORY: cancms/B324-Z-pub
+#          PUBLISH_BRANCH: gh-pages
+#          PUBLISH_DIR: ./public
+#          commit_message: ${{ github.event.head_commit.message }}
+
+
+
+      # 部署
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          # token： setting -> Developer Settings -> classic token
+          token: ${{ secrets.PERSONAL_TOKEN }}
+
+          # deploy repository
+          repository-name: cancms/B324-Z-pub
+          # 项目配置的打包目录名称
+          folder: public
+          # 提交分支名
+          branch: gh-pages
