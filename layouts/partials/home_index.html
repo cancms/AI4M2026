@@ -1,4 +1,36 @@
 
+
+
+{{/*
+jQuery轮播效果（Carousell）
+注意 prev nextl 两个button的href id 和 setction id要一致
+https://blog.csdn.net/chenmo2001/article/details/117674446
+*/}}
+{{ $slider_hash_id := "hero_sliders" }}
+{{ $slider_args := dict "wcPage" $ "wcBlock" .Params.heroSlideBlock "wcIdentifier" $slider_hash_id }}
+<section  id="section-home-slide" class="home-section wg-home-slide">
+
+
+  {{/*<div class="container">
+    <div class="row">
+      <div class="col-12  hero-media carousel slide " data-ride="carousel"  id="{{ $slider_hash_id }}">
+        {{ partial "blocks/slider.html" $slider_args }}
+      </div>
+
+    </div>
+  </div>*/}}
+
+
+  <div class="  hero-media carousel slide " data-ride="carousel"  id="{{ $slider_hash_id }}">
+    {{ partial "blocks/slider.html" $slider_args }}
+  </div>
+
+
+</section>
+
+
+
+
 {{/*  lab 介绍  */}}
 {{ $heroBlock := .Params.heroBlock }}
 <section  id="section-hero" class="home-section wg-hero" >
@@ -13,23 +45,7 @@
 </section>
 
 
-{{/*
-jQuery轮播效果（Carousell）
-注意 prev nextl 两个button的href id 和 setction id要一致
-https://blog.csdn.net/chenmo2001/article/details/117674446
-*/}}
-{{ $slider_hash_id := "hero_sliders" }}
-{{ $slider_args := dict "wcPage" $ "wcBlock" .Params.heroSlideBlock "wcIdentifier" $slider_hash_id }}
-<section  id="section-home-slide" class="home-section wg-home-slide">
-  <div class="container">
-    <div class="row">
-      <div class="col-12  hero-media carousel slide " data-ride="carousel"  id="{{ $slider_hash_id }}">
-        {{ partial "blocks/slider.html" $slider_args }}
-    </div>
 
-    </div>
-  </div>
-</section>
 
 
 

@@ -1,13 +1,14 @@
 
 // Override this file to add your own SCSS styling.
 
-
+$max_width: 1440px;
 
 html, body {
 
   font-family: montserrat,PingFang SC,Microsoft YaHei,微软雅黑,STXihei,华文细黑,sans-serif;
   font-size: 18px;
   color: #000;
+  background-color: #f2f2f2;
 
 }
 
@@ -25,9 +26,50 @@ html, body {
 }
 
 
+
+
+.site-wrapper {
+  max-width: $max_width;
+  margin: 2rem auto;
+  background: #ffffff;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(198, 40, 40, 0.2);
+  border-radius: 32px;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: $max_width;
+  }
+}
+
+
+
+
+
+
+
+
 #navbar-main .main-menu-item ul li .nav-link {
   color: #000;
 }
+
+
+.navbar {
+  box-shadow: unset;
+  margin: 1rem 0 0 0;
+}
+
+
+
+.home-section:first-of-type {
+  padding-top: 20px;
+}
+
+
+
+
+
+
 #section-hero {
   .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 1rem;
@@ -70,6 +112,20 @@ html, body {
    }
 
 }
+
+
+
+
+.carousel-control-next, .carousel-control-prev {
+  display: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -169,11 +225,20 @@ html, body {
 }
 
 
-
+// 手机
 @media (max-width: 478px) {
   .navbar-brand {
     margin: 0 auto;
   }
+
+
+
+  .site-wrapper {
+    margin: 0;
+    box-shadow: unset;
+    border-radius: 0;
+  }
+
 }
 
 

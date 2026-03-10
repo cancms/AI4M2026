@@ -3,24 +3,25 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
+
 main:
   - name: Home
     url: /
     weight: 30
 
-  - name: People
+  - name: Research
     url: people
     weight: 40
 
-  - name: Publications
+  - name: Platforms
     url: publications
     weight: 50
 
-  - name: Research
+  - name: Highlights
     url: research
     weight: 60
 
-  - name: Gallery
+  - name: Publications
     url: gallery
     weight: 70
 
