@@ -9,8 +9,6 @@ on:
 env:
   WC_HUGO_VERSION: '0.135.0'
 
-permissions:
-  contents: write
 
 jobs:
   build-and-deploy:
