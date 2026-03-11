@@ -33,19 +33,112 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 
 {{/*  lab 介绍  */}}
 {{ $heroBlock := .Params.heroBlock }}
-<section  id="section-hero" class="home-section wg-hero" >
+{{/*<section  id="section-hero" class="home-section wg-hero" >
   <div class="container">
     <div class="row">
       <div class="col-12 hero-title" >{{ $heroBlock.content.title | markdownify }}</div>
     </div>
     <div class="row">
-      <div class="col-12 hero-desc-txt" >{{/* $heroBlock.content.text | markdownify */}}</div>
+      <div class="col-12 hero-desc-txt" >*/}}{{/* $heroBlock.content.text | markdownify */}}{{/*</div>
     </div>
   </div>
-</section>
+</section>*/}}
 
 
+<div id="section-home-content" class="home-section ">
 
+
+  <div class="home-content-wrap ">
+
+    <!-- 一句话介绍 -->
+    <div class="tagline-section">
+      <div class="tagline">
+        重新定义加速: 基础科学 x 工程极限.
+        <small> —— 一句话介绍：我们构建未来技术原型，从芯片到认知。</small>
+      </div>
+    </div>
+
+    <!-- 核心能力展示 (浅色卡片) -->
+    <h2 class="section-title">核心能力</h2>
+    <div class="core-grid">
+      <div class="core-card">
+        <div class="core-icon"><i class="fas fa-atom"></i></div>
+        <h3>量子架构</h3>
+        <p>超导量子处理器、低温CMOS 集成，保真度超过99.8%</p>
+      </div>
+      <div class="core-card">
+        <div class="core-icon"><i class="fas fa-microchip"></i></div>
+        <h3>异构加速</h3>
+        <p>基于Chiplet的AI引擎，存内计算，突破冯·诺依曼瓶颈</p>
+      </div>
+      <div class="core-card">
+        <div class="core-icon"><i class="fas fa-wave-square"></i></div>
+        <h3>光电融合</h3>
+        <p>硅光互连，低延迟高带宽，片上激光器阵列</p>
+      </div>
+      <div class="core-card">
+        <div class="core-icon"><i class="fas fa-brain"></i></div>
+        <h3>神经符号</h3>
+        <p>神经符号推理，可解释大模型，科学发现引擎</p>
+      </div>
+    </div>
+
+    <!-- 代表论文 -->
+    <h2 class="section-title">代表论文</h2>
+    <div class="papers-grid">
+      <div class="paper-item">
+        <span class="paper-venue">Nature · 2025</span>
+        <div class="paper-title">室温量子相干在光子声子耦合中的实现</div>
+        <div class="paper-authors">J. Chen, R. S. Williams, et al.</div>
+      </div>
+      <div class="paper-item">
+        <span class="paper-venue">Science · 2024</span>
+        <div class="paper-title">可扩展的加速器架构：超越摩尔定律的异构计算</div>
+        <div class="paper-authors">A. Patel, M. Lee, 多伦多大学团队</div>
+      </div>
+      <div class="paper-item">
+        <span class="paper-venue">ISSCC 2025</span>
+        <div class="paper-title">基于红黑树的存内处理单元，能效达150TOPS/W</div>
+        <div class="paper-authors">K. Nakamura, S. Verdon, et al.</div>
+      </div>
+    </div>
+
+    <!-- 图片展示 -->
+    <h2 class="section-title">图片展示</h2>
+    <div class="gallery-grid">
+      <div class="gallery-img img1"><span class="img-label">纳米加工</span></div>
+      <div class="gallery-img img2"><span class="img-label">fMRI 实时分析</span></div>
+      <div class="gallery-img img3"><span class="img-label">量子控制板</span></div>
+      <div class="gallery-img img4"><span class="img-label">粒子加速器腔</span></div>
+    </div>
+
+    <!-- 视频展示 -->
+    <h2 class="section-title">视频展示</h2>
+    <div class="video-section">
+      <div class="video-card">
+        <div class="video-thumb"
+             style="background-image: linear-gradient(0deg, #b0b0b0, #e0e0e0), url('https://placehold.co/640x360/b0b0b0/000000?text=Quantum+Control+Room');">
+          <i class="fas fa-play-circle"></i>
+        </div>
+        <div class="video-meta">
+          <h4>量子芯片的极低温测试</h4>
+          <p>走进稀释制冷机 · 3分44秒</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb"
+             style="background-image: linear-gradient(0deg, #b0b0b0, #e0e0e0), url('https://placehold.co/640x360/b0b0b0/000000?text=Photonic+Accelerator');">
+          <i class="fas fa-play-circle"></i>
+        </div>
+        <div class="video-meta">
+          <h4>硅光AI加速器原型</h4>
+          <p>片上互连演示 · 6分12秒</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 
@@ -80,67 +173,4 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 </section>
 */}}
 
-
-
-{{/*
-  Publications
-
-<section id="section-publications" class="home-section ">
-  <div class="container">
-    <div class="section-c-title" >Publications</div>
-    <div class="">
-      <div style="padding-bottom: 2rem;">Full list in <a href="https://scholar.google.com/citations?user=_-JylBkAAAAJ&hl=en">Google Scholar</a>. </div>
-      <ul class="">
-        {{ range  .Site.Data.publications }}
-          <li class="">
-            {{ partial "views/pub_item.html" . }}
-          </li>
-        {{ end }}
-      </ul>
-
-    </div>
-
-  </div>
-</section>
-
-*/}}
-
-
-
-
-
-{{ $newsBlock := .Params.newsBlock }}
-{{ $pubsBlock := .Params.publicationsBlock }}
-{{ $news_args := dict "wcPage" $ "wcBlock" $newsBlock "wcIdentifier" "latest_news" }}
-{{ $pubs_args := dict "wcPage" $ "wcBlock" $pubsBlock "wcIdentifier" "latest_pubs" }}
-<section id="section-news" class="home-section wg-news">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 text-center text-md-left">
-
-        <div class="row title-head">
-          <div class="col-12 col-md-8 common-block-title">{{ $newsBlock.content.title }}</div>
-          <div class="col-12 col-md-4 more-cell"><a class="more-link" href="{{"news" | relURL }}">More &gt; </a></div>
-        </div>
-
-          {{ partial "blocks/collection.html" $news_args }}
-      </div>
-
-      <div class="col-12 col-md-6  text-center text-md-left ">
-
-        <div class="row title-head">
-          <div class="col-12 col-md-8 common-block-title">Latest Publications</div>
-          <div class="col-12 col-md-4 more-cell"><a class="more-link" href="{{"publications" | relURL }}">More &gt; </a></div>
-        </div>
-
-        <div class="col-12">
-          {{$pubs := first 5 (sort  .Site.Data.publications "year" "desc")  }}
-          {{ range  $pubs }}
-              {{ partial "views/pub_item_card.html" . }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
