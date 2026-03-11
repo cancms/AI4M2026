@@ -53,6 +53,7 @@ html, body {
 
 .site-wrapper {
   width: 85%;
+  max-width: $max_width;
   margin: 2rem auto;
   background: #ffffff;
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(198, 40, 40, 0.2);
@@ -334,6 +335,10 @@ html, body {
     gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    video {
+      height: 100%;
+    }
   }
 
   .video-card {
@@ -351,14 +356,16 @@ html, body {
   }
 
   .video-thumb {
-    height: 240px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: #e8dcdc;
+    //background-color: #000;
+
+    background-image: linear-gradient(0deg, #881111, #1a1a1a);
   }
 
   .video-thumb i {
