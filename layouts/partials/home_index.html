@@ -53,8 +53,8 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
     <!-- 一句话介绍 -->
     <div class="tagline-section">
       <div class="tagline">
-        重新定义加速: 基础科学 x 工程极限.
-        <small> —— 一句话介绍：我们构建未来技术原型，从芯片到认知。</small>
+        {{ $heroBlock.content.title | markdownify }}
+        <small> —— {{ $heroBlock.content.text | markdownify }}</small>
       </div>
     </div>
 
@@ -105,7 +105,7 @@ https://blog.csdn.net/chenmo2001/article/details/117674446
 
     <!-- 图片展示 -->
     <h2 class="section-title">图片展示</h2>
-    <div class="gallery-grid">
+    <div class="image-gallery-grid">
       <div class="gallery-img img1"><span class="img-label">纳米加工</span></div>
       <div class="gallery-img img2"><span class="img-label">fMRI 实时分析</span></div>
       <div class="gallery-img img3"><span class="img-label">量子控制板</span></div>

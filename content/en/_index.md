@@ -10,11 +10,11 @@ type: home_index
 heroBlock:
   block: hero
   content:
-    title: WELCOME 
+    title: AI for Science Researcher  
 #   image:
 #      filename: research_topic.jpg
     text: |
-      Descrioption
+      Building autonomous robotic platforms for catalyst discovery and electrochemical systems
   
 
 
